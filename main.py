@@ -22,5 +22,8 @@ class Mapper:
     def existsMapping(self):
         return self.__existsMapping
 
-mapper = Mapper(sys.argv[1], sys.argv[2])
-print (mapper.existsMapping())
+if len(sys.argv) >= 3:
+    mapper = Mapper(sys.argv[1], sys.argv[2])
+    print (mapper.existsMapping())
+else:
+    print ("Invalid input. The program requires two strings as arguments.")
