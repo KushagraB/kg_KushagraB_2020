@@ -19,4 +19,8 @@ class Mapper:
                 else:
                     self.__mapping[self.__s1[i]] = self.__s2[i]
 
+    def existsMapping(self):
+        return self.__existsMapping
+
 mapper = Mapper(sys.argv[1], sys.argv[2])
+print (mapper.existsMapping())
